@@ -9,23 +9,30 @@ const body = document.querySelector('body'),
 
 let thisTarget, thisMouseoverTarget, thisMouseoutTarget;
 
-/* body.addEventListener('mouseover', function (e) {
+body.addEventListener('mouseover', function (e) {
   thisMouseoverTarget = e.target;
 
-  if(thisMouseoverTarget.classList.contains('._drop-down-intro') && !thisMouseoverTarget.closest('._drop-down').classList.contains('_active')) {
-    thisMouseoverTarget.closest('._drop-down').classList.add('_active');
+  let dropDown = thisMouseoverTarget.closest('._drop-down');
+  if(dropDown) {
+    if(!dropDown.classList.contains('_active')) {
+      dropDown.classList.add('_active');
+    }
   }
 
 });
 
-body.addEventListener('mouseover', function (e) {
+body.addEventListener('mouseout', function (e) {
   thisMouseoutTarget = e.target;
 
-  if(thisMouseoutTarget.classList.contains('._drop-down-intro') && thisMouseoutTarget.closest('._drop-down').classList.contains('_active')) {
-    thisMouseoutTarget.closest('._drop-down').classList.remove('_active');
+  let dropDown = thisMouseoverTarget.closest('._drop-down');
+  if(dropDown) {
+    if(dropDown.classList.contains('_active')) {
+      dropDown.classList.remove('_active');
+    }
+    
   }
 
-}); */
+});
 
 body.addEventListener('click', function (e) {
 
