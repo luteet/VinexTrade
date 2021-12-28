@@ -83,19 +83,18 @@ body.addEventListener('click', function (e) {
     
     }
 
-
 })
 
 
 // =-=-=-=-=-=-=-=-=-=-=-=- <slider> -=-=-=-=-=-=-=-=-=-=-=-=
-/*
-let slider = new Swiper('.__slider', {
-  
-    spaceBetween: 30,
-    slidesPerView: 1,
-    centeredSlides: false,
 
-    loop: true,
+let opportunitiesSlider = new Swiper('.opportunities__slider', {
+  
+    spaceBetween: 5,
+    slidesPerView: 1,
+    /* centeredSlides: false, */
+
+    loop: false,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -105,18 +104,21 @@ let slider = new Swiper('.__slider', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      992: {
-        slidesPerView: 3,
-        centeredSlides: true,
-    
-      },
-      600: {
+      768: {
         slidesPerView: 2,
-        centeredSlides: false,
       },
+      1336: {
+        spaceBetween: 30,
+        slidesPerView: 2,
+      },
+      1900: {
+        slidesPerView: 3,
+      },
+      
+      
     }
 }); 
-*/
+
 // =-=-=-=-=-=-=-=-=-=-=-=- </slider> -=-=-=-=-=-=-=-=-=-=-=-=
 
 
