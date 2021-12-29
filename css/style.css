@@ -2586,6 +2586,10 @@ body._popup-active {
 ._title {
 } */
 
+.faq__container {
+  z-index: 1;
+}
+
 .faq__bg--elem {
   left: 50%;
   top: 50%;
