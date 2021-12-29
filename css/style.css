@@ -2283,7 +2283,7 @@ body._popup-active {
 
 .core-team {
   position: relative;
-  z-index: 2;
+  z-index: auto;
 }
 
 .core-team__bg--elem._1 {
