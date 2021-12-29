@@ -2483,6 +2483,11 @@ body._popup-active {
   /* margin: 0 -15px; */
 }
 
+.road-map__item:nth-child(even) .road-map__item--text {
+  padding-bottom: 0;
+  padding-top: 15px;
+}
+
 .road-map__item--body {
   padding: 15px 0;
   display: -webkit-box;
@@ -2513,6 +2518,10 @@ body._popup-active {
   height: 100%;
   width: 5px;
   background: var(--slide-color, var(--accent));
+}
+
+.road-map__item--text {
+  padding-top: 15px;
 }
 
 .road-map__item--arrow {
@@ -3218,6 +3227,8 @@ body._popup-active {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 0;
   }
 
   .road-map__item--info {
@@ -3832,6 +3843,10 @@ body._popup-active {
   }
 
   .footer__nav-item--list._hidden-list {
+    display: none;
+  }
+
+  .footer__copy {
     display: none;
   }
 }
