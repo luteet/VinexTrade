@@ -2450,6 +2450,10 @@ body._popup-active {
 ._btn {
 } */
 
+.road-map {
+  z-index: 1;
+}
+
 .road-map__bg--elem {
   width: 600px;
   height: 600px;
@@ -2587,7 +2591,7 @@ body._popup-active {
 } */
 
 .faq__container {
-  z-index: 1;
+  z-index: auto;
 }
 
 .faq__bg--elem {
