@@ -2481,7 +2481,7 @@ body._popup-active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 -9%;
+  margin: 0 -8.5%;
 }
 
 .road-map__item--info {
@@ -2532,8 +2532,8 @@ body._popup-active {
   top: 0;
   height: 100%;
   width: 100%;
-  -webkit-clip-path: polygon(10% 49%, 0 0, 90% 0, 100% 48%, 90% 100%, 0 100%);
-          clip-path: polygon(10% 49%, 0 0, 90% 0, 100% 48%, 90% 100%, 0 100%);
+  -webkit-clip-path: polygon(10% 49%, 0 0, 90% 0, 100% 49%, 90% 100%, 0 100%);
+          clip-path: polygon(10% 49%, 0 0, 90% 0, 100% 49%, 90% 100%, 0 100%);
   background: var(--slide-color, var(--accent));
 }
 
