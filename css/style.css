@@ -1651,20 +1651,20 @@ body._popup-active {
 }
 
 ._circle-color-1 {
-  background: radial-gradient(circle, #5341c0 0%, rgba(83, 65, 192, 0.3) 35%, rgba(255, 255, 255, 0) 65%);
+  background: radial-gradient(circle, rgba(83, 65, 192, 0.8) 0%, rgba(83, 65, 192, 0.3) 35%, rgba(255, 255, 255, 0) 65%);
 }
 
 ._circle-color-2 {
   /* background: radial-gradient(circle, rgba(217,95,31,1) 0%, rgba(255,255,255,0) 50%); */
-  background: radial-gradient(circle, #d95f1f 0%, rgba(217, 95, 31, 0.29) 35%, rgba(255, 255, 255, 0) 65%);
+  background: radial-gradient(circle, rgba(217, 95, 31, 0.8) 0%, rgba(217, 95, 31, 0.29) 35%, rgba(255, 255, 255, 0) 65%);
 }
 
 ._circle-color-3 {
-  background: radial-gradient(circle, #a03da9 0%, rgba(160, 61, 169, 0.3) 35%, rgba(255, 255, 255, 0) 65%);
+  background: radial-gradient(circle, rgba(160, 61, 169, 0.8) 0%, rgba(160, 61, 169, 0.3) 35%, rgba(255, 255, 255, 0) 65%);
 }
 
 ._circle-color-4 {
-  background: radial-gradient(circle, #03f6fe 0%, rgba(3, 246, 254, 0.3) 35%, rgba(255, 255, 255, 0) 65%);
+  background: radial-gradient(circle, rgba(3, 246, 254, 0.8) 0%, rgba(3, 246, 254, 0.3) 35%, rgba(255, 255, 255, 0) 65%);
 }
 
 ._main-title {
