@@ -2481,6 +2481,34 @@ body._popup-active {
   /* margin: 0 -15px; */
 }
 
+.road-map__item:nth-child(even) .road-map__item--body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.road-map__item:nth-child(even) .road-map__item--body::after {
+  content: "";
+  display: inline-block;
+  min-height: 150px;
+}
+
+.road-map__item:nth-child(even) .road-map__item--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
 .road-map__item:nth-child(even) .road-map__item--text {
   padding-bottom: 0;
   padding-top: 15px;
@@ -2569,7 +2597,7 @@ body._popup-active {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.7rem;
   line-height: 100%;
   width: 93px;
   height: 93px;
@@ -3201,32 +3229,8 @@ body._popup-active {
     padding: 0 30px 0 0;
   }
 
-  .road-map__item:nth-child(even) .road-map__item--body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-
   .road-map__item:nth-child(even) .road-map__item--body::after {
-    content: "";
-    display: inline-block;
     min-height: 200px;
-  }
-
-  .road-map__item:nth-child(even) .road-map__item--info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding-top: 15px;
-    padding-bottom: 0;
   }
 
   .road-map__item--info {
