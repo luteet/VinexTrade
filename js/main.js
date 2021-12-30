@@ -83,6 +83,21 @@ const body = document.querySelector('body'),
 
 let thisTarget, thisMouseoverTarget, thisMouseoutTarget;
 
+/* body.addEventListener('mouseout', function (e) {
+  thisMouseoutTarget = e.target;
+  
+  let dropDown = thisMouseoverTarget.closest('._drop-down._active');
+  if (dropDown) {
+    
+    if (dropDown.classList.contains('_active')) {
+      dropDown.classList.remove('_active');
+      console.log('out');
+    }
+
+  }
+
+});
+
 body.addEventListener('mouseover', function (e) {
   thisMouseoverTarget = e.target;
 
@@ -90,23 +105,12 @@ body.addEventListener('mouseover', function (e) {
   if (dropDown) {
     if (!dropDown.classList.contains('_active')) {
       dropDown.classList.add('_active');
+      
     }
   }
 
-});
+}); */
 
-body.addEventListener('mouseout', function (e) {
-  thisMouseoutTarget = e.target;
-
-  let dropDown = thisMouseoverTarget.closest('._drop-down');
-  if (dropDown) {
-    if (dropDown.classList.contains('_active')) {
-      dropDown.classList.remove('_active');
-    }
-
-  }
-
-});
 
 document.querySelectorAll('.faq__item--content').forEach(element => {
 
@@ -131,6 +135,9 @@ body.addEventListener('click', function (e) {
     })
   }
 
+
+
+
   let dropDownIntro = thisTarget.closest('._drop-down-intro'),
     dropDownParent = (dropDownIntro) ? dropDownIntro.closest('._drop-down') : false;
   if (dropDownIntro) {
@@ -147,27 +154,35 @@ body.addEventListener('click', function (e) {
 
   }
 
+
+
+
   let btnToScroll = thisTarget.closest('._btn-to-scroll');
   if (btnToScroll) {
 
     e.preventDefault();
-    let section = document.querySelector(btnToScroll.getAttribute('href'));
-
-    section = (section) ? section : 0;
-
-    if (section) {
-      menu.forEach(elem => {
-        elem.classList.remove('_active')
-      })
-      window.scroll({
-        left: 0,
-        top: section.offsetTop,
-        behavior: 'smooth'
-      })
-
+    let section;
+    try {
+      section = document.querySelector(btnToScroll.getAttribute('href'));
     }
+    catch {
+      section = 0;
+    }
+    
+
+    //section = (section) ? section : 0;
+
+    menu.forEach(elem => {
+      elem.classList.remove('_active')
+    })
+    window.scroll({
+      left: 0,
+      top: (section) ? section.offsetTop : section,
+      behavior: 'smooth'
+    })
 
   }
+
 
 
 
@@ -215,6 +230,9 @@ body.addEventListener('click', function (e) {
 
   }
 
+
+
+
 })
 
 
@@ -255,18 +273,10 @@ let roadMapSlider = new Swiper('.road-map__slider', {
 
   spaceBetween: 0,
   slidesPerView: 1,
-  /* centeredSlides: false, */
 
   loop: true,
   loopedSlides: 4,
-  /* pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  }, */
+
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -274,7 +284,6 @@ let roadMapSlider = new Swiper('.road-map__slider', {
     1550: {
       slidesPerView: 3,
     },
-
 
   }
 });

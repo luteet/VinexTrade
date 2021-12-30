@@ -1573,11 +1573,25 @@ body._popup-active {
   position: relative;
 }
 
-._drop-down._active ._drop-down-list {
+._drop-down._active ._drop-down-list,
+._drop-down:hover ._drop-down-list {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  -webkit-transform: translate(0, 5px);
+          transform: translate(0, 5px);
+}
+
+._drop-down._active ._drop-down-list::before,
+._drop-down:hover ._drop-down-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  background-color: transparent;
 }
 
 ._drop-down-intro {
@@ -1831,6 +1845,9 @@ body._popup-active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__lang--icon {
@@ -2543,8 +2560,8 @@ body._popup-active {
   width: 95%;
   height: 100%;
   /* filter: drop-shadow(10px 0 5px rgba(#000,0.3)); */
-  -webkit-filter: drop-shadow(17px 0px 7px black);
-          filter: drop-shadow(17px 0px 7px black);
+  -webkit-filter: drop-shadow(17px 0px 7px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(17px 0px 7px rgba(0, 0, 0, 0.3));
   z-index: -2;
 }
 
@@ -3240,6 +3257,11 @@ body._popup-active {
 
   .road-map__item--info::before {
     width: 2px;
+  }
+
+  .road-map__item--arrow-bg {
+    -webkit-filter: drop-shadow(20px 0px 7px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(20px 0px 7px rgba(0, 0, 0, 0.7));
   }
 
   .road-map__item--count {
