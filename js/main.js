@@ -261,7 +261,7 @@ let opportunitiesSlider = new Swiper('.opportunities__slider', {
       spaceBetween: 30,
       slidesPerView: 2,
     },
-    1900: {
+    1600: {
       slidesPerView: 3,
     },
 
