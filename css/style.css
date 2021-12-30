@@ -2325,8 +2325,8 @@ body._popup-active {
 .core-team__bg--elem._2 {
   left: 0;
   top: 0;
-  -webkit-transform: translate(-10%, 100px);
-          transform: translate(-10%, 100px);
+  -webkit-transform: translate(-10%, 70px);
+          transform: translate(-10%, 70px);
   width: 130%;
   height: 100%;
   text-align: center;
@@ -2360,6 +2360,10 @@ body._popup-active {
   position: relative;
 }
 
+.core-team__title {
+  padding-bottom: 22px;
+}
+
 .core-team__portrait {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2383,7 +2387,7 @@ body._popup-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -45px;
+  margin-top: -5px;
   /* margin-left: 60px; */
 }
 
@@ -2489,7 +2493,13 @@ body._popup-active {
 }
 
 .road-map__title {
-  padding-bottom: 40px;
+  /* padding-bottom: 31px;
+  @include _768 {
+      padding-bottom: 41px;
+  }
+  @include _992 {
+      padding-bottom: 60px;
+  } */
 }
 
 .road-map__slider {
@@ -2680,6 +2690,10 @@ body._popup-active {
 .faq__bg--elem._1 {
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
+}
+
+.faq__title {
+  padding-bottom: 30px;
 }
 
 .faq__list {
@@ -3200,7 +3214,7 @@ body._popup-active {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1/4;
-    padding-bottom: 85px;
+    padding-bottom: 30px;
   }
 
   .core-team__portrait {
@@ -3215,6 +3229,7 @@ body._popup-active {
   }
 
   .core-team__sertif-list {
+    margin-top: -45px;
     padding-left: 30px;
   }
 
@@ -3336,6 +3351,10 @@ body._popup-active {
   .faq__bg--elem._1 {
     -webkit-transform: translate(-75%, -45%);
             transform: translate(-75%, -45%);
+  }
+
+  .faq__title {
+    padding-bottom: 0px;
   }
 
   .faq__item--title::after {
@@ -3665,6 +3684,10 @@ body._popup-active {
     grid-template-columns: 30% 40% auto;
   }
 
+  .core-team__title {
+    padding-bottom: 15px;
+  }
+
   .core-team__info {
     padding-top: 135px;
     margin-left: 75px;
@@ -3936,6 +3959,10 @@ body._popup-active {
     grid-template-columns: 35% 37% auto;
   }
 
+  .core-team__title {
+    padding-bottom: 85px;
+  }
+
   .core-team__info {
     margin-left: 0;
   }
@@ -3981,6 +4008,10 @@ body._popup-active {
     width: 1100px;
     height: 1100px;
     opacity: 0.7;
+  }
+
+  .road-map__title {
+    padding-bottom: 40px;
   }
 
   .road-map__item--count {
