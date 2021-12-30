@@ -1823,7 +1823,7 @@ body._popup-active {
   top: 0;
   z-index: 2;
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   max-width: 372px;
   background-color: var(--accent);
   overflow: auto;
