@@ -2542,8 +2542,9 @@ body._popup-active {
   top: 0;
   width: 95%;
   height: 100%;
-  -webkit-filter: drop-shadow(10px 0 5px rgba(0, 0, 0, 0.3));
-          filter: drop-shadow(10px 0 5px rgba(0, 0, 0, 0.3));
+  /* filter: drop-shadow(10px 0 5px rgba(#000,0.3)); */
+  -webkit-filter: drop-shadow(17px 0px 7px black);
+          filter: drop-shadow(17px 0px 7px black);
   z-index: -2;
 }
 
@@ -2900,7 +2901,7 @@ body._popup-active {
 }
 
 .footer__copy {
-  display: inline-block;
+  display: none;
   background: var(--btn-gradient);
   -webkit-background-clip: text;
           background-clip: text;
@@ -3281,6 +3282,10 @@ body._popup-active {
 
   .faq__footer {
     padding-top: 75px;
+  }
+
+  ._visibleOnMobile {
+    display: block;
   }
 
   .footer__container {
@@ -3847,7 +3852,7 @@ body._popup-active {
   }
 
   .footer__copy {
-    display: none;
+    display: inline-block;
   }
 }
 

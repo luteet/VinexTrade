@@ -258,6 +258,7 @@ let roadMapSlider = new Swiper('.road-map__slider', {
   /* centeredSlides: false, */
 
   loop: true,
+  loopedSlides: 4,
   /* pagination: {
     el: '.swiper-pagination',
     clickable: true,
