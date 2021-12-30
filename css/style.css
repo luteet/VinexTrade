@@ -1963,7 +1963,8 @@ body._popup-active {
 
 .intro__info--title {
   color: var(--light-cyan);
-  padding: 20px 0 15px 0;
+  padding: 5px 0 10px;
+  line-height: 140%;
 }
 
 .intro__info--text {
@@ -2190,7 +2191,7 @@ body._popup-active {
 }
 
 .opportunities__slider--list {
-  padding-bottom: 47px;
+  padding-bottom: 49px;
 }
 
 .opportunities__slider--nav {
@@ -3852,6 +3853,7 @@ body._popup-active {
 
   .intro__info--subtitle {
     font-size: 1.125rem;
+    display: inline-block;
   }
 
   .intro__info--text {
@@ -3906,6 +3908,7 @@ body._popup-active {
   .why__container {
     -ms-grid-columns: 60% 40%;
     grid-template-columns: 60% 40%;
+    min-height: 809px;
   }
 
   .why__video {
@@ -3938,6 +3941,7 @@ body._popup-active {
 
   .opportunities__title {
     padding-bottom: 75px;
+    margin-top: -10px;
   }
 
   .opportunities__text {
@@ -3957,10 +3961,12 @@ body._popup-active {
   .core-team__container {
     -ms-grid-columns: 35% 37% auto;
     grid-template-columns: 35% 37% auto;
+    min-height: 870px;
   }
 
   .core-team__title {
     padding-bottom: 85px;
+    /* margin-top: -10px; */
   }
 
   .core-team__info {
@@ -4012,6 +4018,7 @@ body._popup-active {
 
   .road-map__title {
     padding-bottom: 40px;
+    margin-top: -8px;
   }
 
   .road-map__item--count {
