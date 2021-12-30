@@ -242,7 +242,7 @@ let opportunitiesSlider = new Swiper('.opportunities__slider', {
 
   spaceBetween: 5,
   slidesPerView: 1,
-  /* centeredSlides: false, */
+  /* centeredSlides: true, */
 
   loop: false,
   pagination: {
@@ -254,15 +254,18 @@ let opportunitiesSlider = new Swiper('.opportunities__slider', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    768: {
+    550: {
       slidesPerView: 2,
     },
+    /* 768: {
+      slidesPerView: 2,
+    }, */
     1336: {
       spaceBetween: 30,
-      slidesPerView: 2,
-    },
-    1600: {
       slidesPerView: 3,
+    },
+    1700: {
+      slidesPerView: 4,
     },
 
 
@@ -282,7 +285,7 @@ let roadMapSlider = new Swiper('.road-map__slider', {
       slidesPerView: 2,
     },
     1550: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
 
   }
