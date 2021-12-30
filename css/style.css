@@ -1650,6 +1650,23 @@ body._popup-active {
   opacity: 1;
 }
 
+._circle-color-1 {
+  background: radial-gradient(circle, #5341c0 0%, rgba(255, 255, 255, 0) 50%);
+}
+
+._circle-color-2 {
+  background: radial-gradient(circle, #d95f1f 0%, rgba(255, 255, 255, 0) 50%);
+  /* background: radial-gradient(circle, rgba(217,95,31,1) 0%, rgba(217,95,31,0.29) 35%, rgba(255,255,255,0) 65%); */
+}
+
+._circle-color-3 {
+  background: radial-gradient(circle, #a03da9 0%, rgba(255, 255, 255, 0) 50%);
+}
+
+._circle-color-4 {
+  background: radial-gradient(circle, #03f6fe 0%, rgba(255, 255, 255, 0) 50%);
+}
+
 ._main-title {
   font-family: var(--title-font);
   font-weight: 700;
@@ -1945,7 +1962,7 @@ body._popup-active {
   -webkit-transform: translate(-25%, -30%);
           transform: translate(-25%, -30%);
   width: 200%;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .intro__image-bg--elem._2 {
@@ -1954,7 +1971,7 @@ body._popup-active {
   -webkit-transform: translate(-20%, -20%);
           transform: translate(-20%, -20%);
   width: 200%;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: -1;
 }
 
@@ -2489,7 +2506,7 @@ body._popup-active {
   top: 50%;
   -webkit-transform: translate(-40%, -40%);
           transform: translate(-40%, -40%);
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .road-map__slider {
@@ -3006,6 +3023,7 @@ body._popup-active {
     width: 600px;
     height: 600px;
     z-index: -1;
+    opacity: 0.5;
   }
 
   .intro__container {
@@ -3212,7 +3230,7 @@ body._popup-active {
   }
 
   .road-map__bg--elem {
-    opacity: 0.7;
+    opacity: 0.5;
     -webkit-transform: translate(-25%, -40%);
             transform: translate(-25%, -40%);
   }
@@ -3733,7 +3751,7 @@ body._popup-active {
   }
 
   .intro__bg--elem._1 {
-    opacity: 0.7;
+    opacity: 0.5;
     -webkit-transform: translate(-40%, -20%);
             transform: translate(-40%, -20%);
     width: 1150px;
@@ -3753,17 +3771,19 @@ body._popup-active {
   }
 
   .intro__image-bg--elem._1 {
-    opacity: 1;
+    opacity: 0.5;
     -webkit-transform: translate(-20%, -20%);
             transform: translate(-20%, -20%);
     width: 1150px;
+    height: 1150px;
   }
 
   .intro__image-bg--elem._2 {
-    opacity: 1;
+    opacity: 0.5;
     -webkit-transform: translate(0%, -10%);
             transform: translate(0%, -10%);
     width: 1000px;
+    height: 1000px;
   }
 
   .intro__image::before {
@@ -3858,7 +3878,7 @@ body._popup-active {
   .road-map__bg--elem {
     width: 1100px;
     height: 1100px;
-    opacity: 1;
+    opacity: 0.5;
   }
 
   .road-map__item--count {
