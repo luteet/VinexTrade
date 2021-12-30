@@ -2046,7 +2046,7 @@ body._popup-active {
 
 .why {
   position: relative;
-  z-index: 2;
+  z-index: auto;
 }
 
 .why__bg--elem {
@@ -2311,6 +2311,10 @@ body._popup-active {
 .core-team {
   position: relative;
   z-index: auto;
+  /* &__btn {
+      display: flex;
+      align-items: center;
+  } */
 }
 
 .core-team__bg--elem._1 {
@@ -2476,6 +2480,9 @@ body._popup-active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 5px;
 }
 
