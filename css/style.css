@@ -1895,7 +1895,7 @@ body._popup-active {
 }
 
 .intro__bg--elem._1 {
-  left: 0;
+  left: 50%;
   top: 0;
   -webkit-transform: translate(-20%, -10%);
           transform: translate(-20%, -10%);
@@ -1957,11 +1957,12 @@ body._popup-active {
 }
 
 .intro__image-bg--elem._1 {
-  left: 0;
+  left: 0%;
   top: 0;
-  -webkit-transform: translate(-25%, -30%);
-          transform: translate(-25%, -30%);
-  width: 200%;
+  -webkit-transform: translate(0%, -30%);
+          transform: translate(0%, -30%);
+  width: 700px;
+  height: 700px;
   opacity: 0.3;
 }
 
@@ -1970,7 +1971,8 @@ body._popup-active {
   top: 0;
   -webkit-transform: translate(-20%, -20%);
           transform: translate(-20%, -20%);
-  width: 200%;
+  width: 700px;
+  height: 700px;
   opacity: 0.3;
   z-index: -1;
 }
@@ -2938,7 +2940,7 @@ body._popup-active {
 }
 
 .footer__copy {
-  display: none;
+  display: inline-block;
   background: var(--btn-gradient);
   -webkit-background-clip: text;
           background-clip: text;
@@ -3012,17 +3014,17 @@ body._popup-active {
   }
 
   .intro__bg--elem._1 {
-    -webkit-transform: translate(-40%, -40%);
-            transform: translate(-40%, -40%);
+    -webkit-transform: translate(-150%, -40%);
+            transform: translate(-150%, -40%);
     opacity: 0.4;
   }
 
   .intro__bg--elem._2 {
     display: block;
-    right: 0;
+    right: 50%;
     top: 0;
-    -webkit-transform: translate(30%, -10%);
-            transform: translate(30%, -10%);
+    -webkit-transform: translate(100%, -10%);
+            transform: translate(100%, -10%);
     width: 600px;
     height: 600px;
     z-index: -1;
@@ -3063,10 +3065,11 @@ body._popup-active {
 
   .intro__image-bg--elem._1 {
     width: 150%;
+    height: 700px;
   }
 
   .intro__image-bg--elem._2 {
-    width: 175%;
+    width: 700px;
   }
 
   .intro__image::before,
@@ -3328,7 +3331,7 @@ body._popup-active {
   }
 
   ._visibleOnMobile {
-    display: block;
+    display: none;
   }
 
   .footer__container {
@@ -3755,15 +3758,15 @@ body._popup-active {
 
   .intro__bg--elem._1 {
     opacity: 0.5;
-    -webkit-transform: translate(-40%, -20%);
-            transform: translate(-40%, -20%);
+    -webkit-transform: translate(-100%, -25%);
+            transform: translate(-100%, -25%);
     width: 1150px;
     height: 1150px;
   }
 
   .intro__bg--elem._2 {
-    -webkit-transform: translate(20%, -10%);
-            transform: translate(20%, -10%);
+    -webkit-transform: translate(100%, -10%);
+            transform: translate(100%, -10%);
     width: 1200px;
     height: 1200px;
   }
@@ -3897,7 +3900,7 @@ body._popup-active {
   }
 
   .footer__copy {
-    display: inline-block;
+    display: none;
   }
 }
 
