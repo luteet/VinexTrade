@@ -284,7 +284,10 @@ let roadMapSlider = new Swiper('.road-map__slider', {
     768: {
       slidesPerView: 2,
     },
-    1550: {
+    1200: {
+      slidesPerView: 3,
+    },
+    1650: {
       slidesPerView: 4,
     },
 
