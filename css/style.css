@@ -2671,6 +2671,7 @@ body._popup-active {
 
 .faq__container {
   z-index: auto;
+  margin-bottom: 55px;
 }
 
 .faq__bg--elem {
@@ -2761,7 +2762,6 @@ body._popup-active {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 55px;
-  padding-bottom: 55px;
 }
 
 /* ._section-padding {
@@ -3338,6 +3338,11 @@ body._popup-active {
     margin: -15px 30px -15px 7vw;
   }
 
+  .faq__container {
+    min-height: 910px;
+    margin-bottom: 75px;
+  }
+
   .faq__bg--elem {
     opacity: 1;
     width: 1200px;
@@ -3374,7 +3379,6 @@ body._popup-active {
 
   .faq__footer {
     padding-top: 70px;
-    padding-bottom: 75px;
   }
 
   ._visibleOnMobile {
