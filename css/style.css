@@ -1432,7 +1432,7 @@ body {
   background-color: var(--dark);
   color: var(--light);
   /* overflow: hidden; */
-  padding-right: 18px;
+  /* padding-right: 18px; */
 }
 
 body._active {
