@@ -2100,13 +2100,13 @@ body._popup-active {
 }
 
 .why__video--iframe {
-  aspect-ratio: 215/121;
+  /* aspect-ratio: 215/121; */
   max-width: 459px;
 }
 
 .why__video--iframe iframe {
   width: 100%;
-  min-height: 100%;
+  min-height: 64vw;
 }
 
 .why__control-panel {
@@ -2997,6 +2997,12 @@ body._popup-active {
   color: transparent;
 }
 
+@media (min-width: 400px) {
+  .why__video--iframe iframe {
+    min-height: 250px;
+  }
+}
+
 @media (min-width: 426px) {
   .core-team__portrait {
     -webkit-box-align: start;
@@ -3649,6 +3655,10 @@ body._popup-active {
     max-width: 100%;
   }
 
+  .why__video--iframe iframe {
+    min-height: 340px;
+  }
+
   .why__control-panel {
     max-width: 100%;
     padding: 0 15px;
@@ -3959,6 +3969,10 @@ body._popup-active {
     height: 795px;
     -webkit-transform: translate(-2%, -11%) rotate(-54deg);
             transform: translate(-2%, -11%) rotate(-54deg);
+  }
+
+  .why__video--iframe iframe {
+    min-height: 410px;
   }
 
   .why__text {
