@@ -3668,7 +3668,7 @@ body._popup-active {
   .why__text {
     padding-right: 0px;
     margin-right: -5px;
-    margin-left: 5px;
+    margin-left: 0px;
     line-height: 30px;
   }
 
@@ -3959,6 +3959,10 @@ body._popup-active {
     height: 795px;
     -webkit-transform: translate(-2%, -11%) rotate(-54deg);
             transform: translate(-2%, -11%) rotate(-54deg);
+  }
+
+  .why__text {
+    margin-left: 5px;
   }
 
   .why__text p:not(:first-child) {
