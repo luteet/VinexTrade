@@ -1431,8 +1431,6 @@ body {
   zoom: 0.8;
   background-color: var(--dark);
   color: var(--light);
-  /* overflow: hidden; */
-  /* padding-right: 18px; */
 }
 
 body._active {
@@ -2982,6 +2980,7 @@ body._popup-active {
 
 .footer__copy {
   display: inline-block;
+  text-transform: none;
   background: var(--btn-gradient);
   -webkit-background-clip: text;
           background-clip: text;
